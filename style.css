@@ -6,9 +6,84 @@
     --transition: .4s ease;
     --gray: gray;
     --lightgray: #f8f8f8;
+    --fontFamily: 'Montserrat', sans-serif;
+    --fontSize: 16px;
+    --transition: .3s ease;
+
 }
+/**************
+Basic styles
+**************/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+   font-family: var(--fontFamily);
+   font-size: var(--fontSize);
+}
+ul {
+    list-style: none;
+}
+/**************
+Basic styles
+**************/
+header{
+    background-image: linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .5)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+}
+header nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   padding-top: 30px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 80px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+header nav span {
+    font-style: italic;
+    font-weight: 700;
+}
+header nav ul {
+    display: flex;
+    margin-right: 80px;
+}
+header nav ul li a{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+header nav ul li:hover {
+    transform: scale(1.1);
+    transition: var(--transition);
+}
+hgroup {
+    padding-bottom: 200px;
+    text-align: center;
+}
+hgroup h4 {
+    font-size: 1.2rem;
+    padding: 40px 0;
+}
+hgroup h1 {
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+}
+hgroup p {
+    font-size: 1.2rem;
+    font-style: italic;
 }
