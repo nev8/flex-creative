@@ -272,3 +272,23 @@ Services
     line-height: 1.5;
     text-align: justify;
 }
+/**************
+Gallery
+**************/
+.gallery {
+    padding: 60px 60px;
+}
+.gallery h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.gallery h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.gallery hr {
+    border: none;
+    height: 2px;
+    width: 25%;
+    background: var(--pink);
+}
