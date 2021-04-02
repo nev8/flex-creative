@@ -90,6 +90,20 @@ hgroup p {
 .container {
     margin: auto;
     width: 90%;
+}button {
+    border: none;
+    background: transparent;
+    padding: 15px 40px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+button:hover {
+    transform: scale(1.1);
+    background: var(--gray);
+    cursor: pointer;
+    transition: var(--transition);
+    border: var(--gray);
 }
 /**************
 About
@@ -124,21 +138,6 @@ About
     line-height: 1.6;
     letter-spacing: 1.1;
     text-align: justify;
-}
-.about article:first-child button {
-    border: none;
-    background: transparent;
-    padding: 15px 40px;
-    font-size: 1rem;
-    border-radius: 30px;
-    border: 1px solid black;
-}
-.about article:first-child button:hover {
-    transform: scale(1.1);
-    background: var(--gray);
-    cursor: pointer;
-    transition: var(--transition);
-    border: var(--gray);
 }
 .about article:last-child {
     flex: 0 0 37%;
@@ -291,4 +290,38 @@ Gallery
     height: 2px;
     width: 25%;
     background: var(--pink);
+}
+/**************
+Pictures
+**************/
+.pictures {
+    background: var(--lightgray);
+    padding: 60px 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.pictures article {
+    flex: 25%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.pictures article img {
+    width: 100%;
+    padding: 15px;
+    object-fit: cover;
+}
+.pictures article img:hover {
+    transform: scale(1.2);
+}
+.pictures article h4 {
+    position: absolute;
+    color: white;
+    background: var(--pink);
+    opacity: .7;
+    padding: 10px 15px;
+    top:50%;
+    left: 37%;
 }
