@@ -87,3 +87,59 @@ hgroup p {
     font-size: 1.2rem;
     font-style: italic;
 }
+/**************
+About
+**************/
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+.about article:first-child {
+    flex: 0 0 57%;
+    padding-left: 60px;
+}
+.about article:first-child h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+.about article:first-child h4 {
+    font-size: 1.2rem;
+    padding: 0 0 20px 0;
+}
+.about article:first-child hr {
+    border: none;
+    height: 2px;
+    width: 25%;
+    background: var(--pink);
+}
+.about article:first-child p {
+    margin: 20px 0;
+    line-height: 1.6;
+    letter-spacing: 1.1;
+    text-align: justify;
+}
+.about article:first-child button {
+    border: none;
+    background: transparent;
+    padding: 15px 40px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.about article:first-child button:hover {
+    transform: scale(1.1);
+    background: var(--gray);
+    cursor: pointer;
+    transition: var(--transition);
+    border: var(--gray);
+}
+.about article:last-child {
+    flex: 0 0 37%;
+}
+.about article:last-child img {
+    width: 100%;
+    border-radius: 5% 0 0 5%; 
+    box-shadow: 0 0 30px 5px var(--gray);  
+}
