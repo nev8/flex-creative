@@ -87,6 +87,10 @@ hgroup p {
     font-size: 1.2rem;
     font-style: italic;
 }
+.container {
+    margin: auto;
+    width: 90%;
+}
 /**************
 About
 **************/
@@ -95,6 +99,7 @@ About
     justify-content: space-between;
     align-items: center;
     padding: 60px 0;
+    border-bottom: 2px solid var(--gray);
 }
 .about article:first-child {
     flex: 0 0 57%;
@@ -142,4 +147,29 @@ About
     width: 100%;
     border-radius: 5% 0 0 5%; 
     box-shadow: 0 0 30px 5px var(--gray);  
+}
+/**************
+Number
+**************/
+.number {
+    border-bottom: 2px solid var(--gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+.number article {
+    flex: 25%;
+    text-align: center;
+}
+.number article h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.number article hr {
+    border:none;
+    height: 1px;
+    width: 20%;
+    background: var(--gray);
+    margin: 25px auto;
 }
