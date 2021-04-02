@@ -152,7 +152,6 @@ About
 Number
 **************/
 .number {
-    border-bottom: 2px solid var(--gray);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -172,4 +171,68 @@ Number
     width: 20%;
     background: var(--gray);
     margin: 25px auto;
+}
+/**************
+Team
+**************/
+.team {
+    padding: 60px 60px;
+    border-bottom: 2px solid var(--gray);
+    border-top: 2px solid var(--gray);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.team article {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+}
+.team article div:first-child {
+    flex: 0 0 40%;
+    padding-right: 40px;
+}
+.team article div:last-child {
+    flex: 0 0 25%;
+    padding-right: 40px;
+}
+.team article:nth-child(even) div:first-child {
+    order: 2;
+}
+.team article:nth-child(odd) div:last-child {
+    order: 1;
+}
+.team article:nth-child(even) {
+    text-align: left;
+    justify-content: flex-start;
+}
+.team article:nth-child(odd) {
+    text-align: right;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+.team article img {
+    width: 100%;
+    box-shadow: 0 5px 30px 0 var(--pink);
+}
+.team article img:hover {
+    transform: scale(1.1);
+    transition: var(--transition);
+}
+.team article div h4 {
+    font-size: 1.2rem;
+    padding: 0 0 20px 0;
+}
+.team article div hr {
+    border: none;
+    height: 1.5px;
+    width: 50%;
+    background: var(--pink);
+    margin-bottom: 20px;
+}
+.team article:nth-child(odd) div hr {
+    margin-left: 260px;
+}
+.team article div p {
+    line-height: 1.5;
 }
