@@ -369,3 +369,19 @@ Contact
     font-size: 1.2rem;
     padding: 10px 0 0 10px;
 }
+/**************
+Footer 1
+**************/
+.first {
+    text-align: center;
+    padding: 60px 0 40px 0;
+}
+.first h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: var(--pink);
+}
+.first h5 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
