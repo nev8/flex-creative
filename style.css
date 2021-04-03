@@ -325,3 +325,47 @@ Pictures
     top:50%;
     left: 37%;
 }
+/**************
+Contact
+**************/
+.contact {
+    height: 100vh;
+    border-bottom: 2px solid var(--gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.contact article:first-child {
+    flex: 0 0 63%;
+    padding-left: 60px;
+}
+.contact article:last-child {
+    flex: 0 0 33%;
+}
+.contact article img {
+    width: 100%;
+    border-radius: 5% 0 0 5%; 
+    box-shadow: 0 0 30px 5px var(--gray);  
+}
+.contact article form {
+    display: flex;
+    flex-direction: column;
+}
+.contact article:first-child form input {
+    border: none;
+    border: 1px solid var(--gray);
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    padding: 10px 0 0 10px;
+}
+.contact article:first-child form textarea {
+    border: none;
+    border: 1px solid var(--gray);
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    padding: 10px 0 0 10px;
+}
