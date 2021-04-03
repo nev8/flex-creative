@@ -385,3 +385,24 @@ Footer 1
     font-size: 1rem;
     margin-bottom: 20px;
 }
+/**************
+Footer 2
+**************/
+.second {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 250px 60px 60px;
+    background: var(--lightgray);
+}
+.second article i {
+    color: var(--pink);
+}
+.second article:last-child i {
+    padding: 0 25px;
+    font-size: 1.3rem;
+}
+.second article:last-child i:hover {
+    color: var(--pink);
+    opacity: .8;
+    cursor: pointer;
+}
